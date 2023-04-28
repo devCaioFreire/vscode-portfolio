@@ -1,18 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    backgroundImage: {
+      app: "linear-gradient(115.73deg, #9B64F4 1.06%, #98F1FE 98.56%)",
+    },
+    colors: {
+      vscodeBg: "#15141B",
+
+      macOsClose: "#FF605C",
+      macOsMinimise: "#FFBD44",
+      macOsMaximise: "#00CA4E",
+
+      textGray: "#B3B3B3",
+      textWhite: "#E1E1E6",
+    },
+    boxShadow: {
+      custom: "0px 5px 10px 5px rgba(0,0,0,0.5)",
+    },
+    gridTemplateRows: {
+      layout: "2rem 1.5rem 1fr ",
+    },
+    gridTemplateColumns: {
+      editor: "2.5rem 16rem 1fr ",
     },
   },
   plugins: [],
-}
+};
