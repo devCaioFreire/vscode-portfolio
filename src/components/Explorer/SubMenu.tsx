@@ -1,6 +1,6 @@
 "use client";
 import { ChevronDown, ChevronRight, Folder as FolderIcon } from "lucide-react";
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import * as Collapsible from "@radix-ui/react-collapsible";
 
 interface FolderProps {
@@ -33,7 +33,7 @@ export const SubMenu = ({
         ) : (
           <ChevronRight size={14} color="#B3B3B3" />
         )}
-        <span className="text-[0.625rem] text-textGray flex item-center">
+        <span className="text-[0.625rem] font-bold text-textGray flex item-center">
           {title}
         </span>
       </Collapsible.Trigger>

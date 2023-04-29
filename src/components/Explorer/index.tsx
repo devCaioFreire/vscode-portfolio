@@ -1,7 +1,9 @@
-import { ChevronRight, MoreHorizontal } from "lucide-react";
+import { ChevronRight, CurlyBraces, FileJson, MoreHorizontal } from "lucide-react";
 import { Folder } from "./Folder";
 import { SubMenu } from "./SubMenu";
 import { File } from "./File";
+import { IoLogoReact } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
 
 export const Explorer = () => {
   return (
@@ -16,7 +18,25 @@ export const Explorer = () => {
 
         <SubMenu title="PORTFOLIO" defaultOpen>
           <Folder title="About Me">
-            <File />
+            <File title="aboutMe.json" icon={CurlyBraces} color="#FFBD44" size={14} />
+          </Folder>
+
+          <Folder title="Projects">
+            <File
+              title="projects.tsx"
+              icon={IoLogoReact}
+              color="#0B76B4"
+              size={14}
+            />
+          </Folder>
+
+          <Folder title="Contact">
+            <File
+              title="contact.ts"
+              icon={SiTypescript}
+              color="#007ACC"
+              size={12}
+            />
           </Folder>
         </SubMenu>
       </nav>
