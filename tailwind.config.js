@@ -7,6 +7,7 @@ module.exports = {
     },
     colors: {
       vscodeBg: "#15141B",
+      vscodeBgSidebar: "#110F18",
 
       macOsClose: "#FF605C",
       macOsMinimise: "#FFBD44",
@@ -14,15 +15,18 @@ module.exports = {
 
       textGray: "#B3B3B3",
       textWhite: "#E1E1E6",
+      textActive: "#60FDC5",
+
+      purple: "#9266D2",
     },
     boxShadow: {
       custom: "0px 5px 10px 5px rgba(0,0,0,0.5)",
     },
     gridTemplateRows: {
-      layout: "2rem 1.5rem 1fr ",
+      layout: "2rem 48.5rem 1fr",
     },
     gridTemplateColumns: {
-      editor: "2.5rem 16rem 1fr ",
+      editor: "3.5rem 16rem 1fr",
     },
   },
   plugins: [],

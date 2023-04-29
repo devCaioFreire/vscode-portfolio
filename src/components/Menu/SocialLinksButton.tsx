@@ -32,8 +32,12 @@ export const SocialLinksButton = () => {
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           side="right"
-          className="bg-[#2a273f] flex flex-col rounded-lg 
-          overflow-auto"
+          className="
+          bg-[#2a273f] 
+          flex flex-col 
+          rounded-lg 
+          overflow-hidden
+          z-10"
         >
           {socialLinks.map((socialItem) => {
             return (
@@ -43,7 +47,7 @@ export const SocialLinksButton = () => {
                   target="_blank"
                   rel="noreferrer"
                   className="text-textGray flex items-center gap-2 px-4 py-3
-                  hover:bg-vscodeBg hover:text-textWhite"
+                  hover:bg-vscodeBgSidebar hover:text-textWhite"
                 >
                   {socialItem.icon}
                   {socialItem.name}

@@ -15,7 +15,7 @@ export const Menu = () => {
         <MenuButton icon={VscDebugAlt} regular />
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         <SocialLinksButton />
         <MenuButton icon={Cog} />
       </div>
