@@ -6,8 +6,8 @@ module.exports = {
       app: "linear-gradient(115.73deg, #9B64F4 1.06%, #98F1FE 98.56%)",
     },
     colors: {
-      vscodeBg: "#15141B",
-      vscodeBgSidebar: "#110F18",
+      vscodeBg: "#21202E",
+      vscodeBgSidebar: "#1C1B22",
 
       macOsClose: "#FF605C",
       macOsMinimise: "#FFBD44",

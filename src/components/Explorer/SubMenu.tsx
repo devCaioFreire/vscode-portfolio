@@ -24,7 +24,7 @@ export const SubMenu = ({
       items-center 
       gap-2 
       px-2 
-      py-1 
+      py-1 r
       w-full
       bg-vscodeBg"
       >
