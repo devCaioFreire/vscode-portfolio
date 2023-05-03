@@ -1,39 +1,30 @@
-import { FileJson, Icon } from "lucide-react";
-import React from "react";
+"use client";
 
-interface FileProps {
-  title: string;
-  children?: React.ReactNode;
-  icon: Icon;
-  color?: string;
-  size?: number;
+import { ReactNode } from "react";
+import Link, { LinkProps } from "next/link";
+import { usePathname } from "next/navigation";
+import { useOpenFiles } from "@/hooks/useOpenFile";
+
+interface FileProps extends LinkProps {
+  children: ReactNode[];
 }
 
-export const File = ({ title, children, icon, size, color}: FileProps) => {
+export function File(props: FileProps) {
+  const { markFileAsOpen } = useOpenFiles();
+  const pathName = usePathname();
+  const isCurrentActive = pathName === props.href;
+
   return (
-    <div
-      className="
-    pl-12
-    p-1
-    justify-center
-    items-center
-    self-center
-    hover:bg-[#322E46] 
-    hover:text-textGray
-    focus: text-textActive
-    cursor-pointer
-    "
-    >
-      <p
-        className=" 
-      flex gap-2 
-      text-xs
+    <Link
+      data-active={isCurrentActive}
+      onClick={() => markFileAsOpen(props.href.toString())}
+      className="flex text-xs items-center gap-2 py-1 px-4 pl-10 
       text-textGray
-      "
-      >
-        {icon && React.createElement(icon, { size: size, color: color })}
-        {title}
-      </p>
-    </div>
+      hover:bg-[#322E46] 
+      hover:text-[#E0DEF2] 
+      data-[active=true]:bg-[#2a273f] 
+      data-[active=true]:text-textPurple"
+      {...props}
+    />
   );
-};
+}

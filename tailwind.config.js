@@ -16,8 +16,7 @@ module.exports = {
       textGray: "#B3B3B3",
       textWhite: "#E1E1E6",
       textActive: "#60FDC5",
-
-      purple: "#9266D2",
+      textPurple: "#9266D2",
     },
     boxShadow: {
       custom: "0px 5px 10px 5px rgba(0,0,0,0.5)",
@@ -29,5 +28,5 @@ module.exports = {
       editor: "3.5rem 16rem 1fr",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

@@ -16,3 +16,16 @@ code .line::before {
   text-align: right;
   color: #8F8CA8;
 }
+
+:root {
+  --shiki-color-text: #F694FF;
+  --shiki-bg: #21202E;
+  --shiki-token-constant: #fff;
+  --shiki-token-string: #9266D2;
+  --shiki-token-comment: #9266D2;
+  --shiki-token-keyword: #9266D2;
+  --shiki-token-parameter: #9266D2;
+  --shiki-token-function: #6AD4E1;
+  --shiki-token-string-expression: #60FDC5;
+  --shiki-token-punctuation: #F694FF;
+}

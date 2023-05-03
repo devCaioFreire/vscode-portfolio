@@ -1,12 +1,14 @@
-import { Menu } from "@/components/Menu/";
 import "../styles/globals.css";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+
 import { Header } from "@/components/header";
+import { Menu } from "@/components/Menu/";
 import { Explorer } from "@/components/Explorer";
 import { Footer } from "@/components/footer";
+import { OpenFilesTabs } from "@/components/OpenFiles";
+import { OpenFilesProvider } from "@/hooks/useOpenFile";
 
 const inter = Inter({ subsets: ["latin"] });
-const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
@@ -17,6 +19,7 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  description: "Personal portfolio",
 };
 
 export default function RootLayout({
@@ -41,12 +44,19 @@ export default function RootLayout({
             grid
             grid-rows-layout"
           >
-            <Header />
+            <OpenFilesProvider>
+              <Header />
 
-            <div className="grid grid-cols-editor max-h-full h-screen">
-              <Menu />
-              <Explorer />
-            </div>
+              <div className="grid grid-cols-editor max-h-full h-screen">
+                <Menu />
+                <Explorer />
+
+                <div className="h-full relative flex flex-col">
+                  <OpenFilesTabs />
+                  <div className="h-full">{children}</div>
+                </div>
+              </div>
+            </OpenFilesProvider>
             <Footer />
           </div>
         </div>

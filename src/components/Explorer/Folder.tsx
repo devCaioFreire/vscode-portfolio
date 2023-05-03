@@ -5,7 +5,7 @@ import * as Collapsible from "@radix-ui/react-collapsible";
 
 interface FolderProps {
   title: string;
-  children?: React.ReactNode;
+  children: ReactNode;
   defaultOpen?: boolean;
 }
 

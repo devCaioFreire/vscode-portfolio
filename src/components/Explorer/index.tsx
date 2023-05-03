@@ -1,14 +1,29 @@
-import {
-  ChevronRight,
-  CurlyBraces,
-  FileJson,
-  MoreHorizontal,
-} from "lucide-react";
+import { CurlyBraces, MoreHorizontal } from "lucide-react";
 import { Folder } from "./Folder";
 import { SubMenu } from "./SubMenu";
 import { File } from "./File";
 import { IoLogoReact } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
+
+export type FileType = {
+  title: string;
+  icon: React.ReactNode;
+};
+
+export const explorerFiles: Record<string, FileType> = {
+  "/portfolio/about": {
+    icon: <CurlyBraces size={14} color="#FFBD44" />,
+    title: "aboutMe.json",
+  },
+  "/portfolio/projects": {
+    icon: <IoLogoReact size={14} color="#0B76B4" />,
+    title: "projects.tsx",
+  },
+  "/portfolio/contact": {
+    icon: <SiTypescript size={14} color="#0B76B4" />,
+    title: "contact.ts",
+  },
+};
 
 export const Explorer = () => {
   return (
@@ -23,30 +38,24 @@ export const Explorer = () => {
 
         <SubMenu title="PORTFOLIO" defaultOpen>
           <Folder title="About Me">
-            <File
-              title="aboutMe.json"
-              icon={CurlyBraces}
-              color="#FFBD44"
-              size={14}
-            />
+            <File href="/portfolio/about">
+              <CurlyBraces size={14} color="#FFBD44" />
+              aboutMe.json
+            </File>
           </Folder>
 
           <Folder title="Projects">
-            <File
-              title="projects.tsx"
-              icon={IoLogoReact}
-              color="#0B76B4"
-              size={14}
-            />
+            <File href={"/portfolio/projects"}>
+              <IoLogoReact size={14} color="#0B76B4" />
+              projects.tsx
+            </File>
           </Folder>
 
           <Folder title="Contact">
-            <File
-              title="contact.ts"
-              icon={SiTypescript}
-              color="#0B76B4"
-              size={12}
-            />
+            <File href={"/portfolio/contact"}>
+              <SiTypescript size={12} color="#0B76B4" />
+              contact.ts
+            </File>
           </Folder>
         </SubMenu>
       </nav>
