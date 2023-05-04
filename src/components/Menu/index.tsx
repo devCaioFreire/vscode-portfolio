@@ -6,7 +6,7 @@ import { SocialLinksButton } from "./SocialLinksButton";
 
 export const Menu = () => {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-between mobile:hidden mobileLarge:flex">
       <div className="flex flex-col">
         <MenuButton icon={Files} isActive cursor />
         <MenuButton icon={Search} />

@@ -25,13 +25,13 @@ export function OpenFilesTabs() {
           <div
             key={index}
             data-active={isActive}
-            className="h-full flex items-center gap-[6px] pl-[10px] hover:bg-[#817c9c26] hover:text-[#908caa] data-[active=true]:bg-[#817c9c14] data-[active=true]:text-white"
+            className="h-full flex items-center gap-[6px] pl-[10px] hover:bg-[#817c9c26] hover:text-[#908caa] data-[active=true]:bg-[#817c9c14] data-[active=true]:text-white border-b-2 border-vscodeBg data-[active=true]:border-textActive"
           >
             <Link href={openFile} className="flex gap-[6px] items-center ">
               <span className="text-white">{file.icon}</span>
               <span
                 data-active={isActive}
-                className="text-[#908caa] data-[active=true]:text-[#e0def4] "
+                className="text-[#B3B3B3] data-[active=true]:text-[#E1E1E6]"
               >
                 {file.title}
               </span>

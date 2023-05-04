@@ -30,7 +30,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-app">
-        <div className="h-screen p-20 flex items-center justify-center">
+        <div
+          className="
+        bg-app 
+        h-screen 
+        p-20 
+        flex 
+        items-center 
+        justify-center
+        mobile:p-4"
+        >
           <div
             className="
             bg-vscodeBg 
@@ -42,7 +51,9 @@ export default function RootLayout({
             shadow-custom
             overflow-hidden
             grid
-            grid-rows-layout"
+            grid-rows-layout
+            mobile:h-full
+            mobileLarge:h-fit"
           >
             <OpenFilesProvider>
               <Header />

@@ -22,9 +22,9 @@ export const SubMenu = ({
         className="
       flex 
       items-center 
-      gap-2 
+      gap-2
       px-2 
-      py-1 r
+      py-1
       w-full
       bg-vscodeBg"
       >
@@ -33,7 +33,14 @@ export const SubMenu = ({
         ) : (
           <ChevronRight size={14} color="#B3B3B3" />
         )}
-        <span className="text-[0.625rem] font-bold text-textGray flex item-center">
+        <span
+          className="
+        flex 
+        item-center
+        text-[0.625rem] 
+        font-bold 
+        text-textGray"
+        >
           {title}
         </span>
       </Collapsible.Trigger>

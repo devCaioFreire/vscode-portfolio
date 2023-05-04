@@ -27,6 +27,25 @@ module.exports = {
     gridTemplateColumns: {
       editor: "3.5rem 16rem 1fr",
     },
+    screens: {
+      mobile: "320px",
+      // => @media (min-width: 430px) { ... }
+
+      mobileLarge: "450px",
+      // => @media (min-width: 430px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 };

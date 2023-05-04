@@ -43,6 +43,7 @@ export function CloseFileButton({ isActive, index }: CloseFileButtonProps) {
         data-active={isActive}
         className="data-[active=true]:text-white"
         size={16}
+        color="#B3B3B3"
       />
     </a>
   );
