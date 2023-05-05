@@ -31,10 +31,7 @@ export const Explorer = () => {
     <div
       className="
     bg-vscodeBgSidebar 
-    border-x-[1px] border-[#000]
-    mobile:hidden
-    mobileLarge:block
-    "
+    border-x-[1px] border-[#000]"
     >
       <div className="flex justify-between px-2 mb-4 mt-1">
         <p className="text-[0.625rem] text-textGray">EXPLORER</p>
@@ -47,7 +44,7 @@ export const Explorer = () => {
         </SubMenu>
 
         <SubMenu title="PORTFOLIO" defaultOpen>
-          <Folder title="About Me">
+          <Folder title="About Me" defaultOpen>
             <File href="/portfolio/about">
               <CurlyBraces size={14} color="#FFBD44" />
               aboutMe.json

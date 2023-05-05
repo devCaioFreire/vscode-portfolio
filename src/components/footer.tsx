@@ -10,7 +10,7 @@ export const Footer = () => {
       mr-2
       items-center 
       justify-end 
-     bg-vscodeBgSidebar"
+      bg-vscodeBgSidebar"
     >
       <a
         href="https://github.com/devCaioFreire"

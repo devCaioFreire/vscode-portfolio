@@ -16,9 +16,14 @@ export const MenuButton = ({
   return (
     <div
       data-active={isActive}
-      className="h-14 flex 
-      justify-center items-center border-l-2 
-      border-[#00000000] data-[active=true]:border-[#60FDC5]"
+      className="
+      h-14
+      justify-center 
+      items-center 
+      border-l-2 
+      border-[#00000000] data-[active=true]:border-[#60FDC5]
+      default:flex
+      mobile:hidden"
     >
       <Icon
         strokeWidth={regular ? 0.1 : 1.5}

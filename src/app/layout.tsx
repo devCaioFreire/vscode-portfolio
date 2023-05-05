@@ -34,31 +34,39 @@ export default function RootLayout({
           className="
         bg-app 
         h-screen 
-        p-20 
         flex 
         items-center 
         justify-center
-        mobile:p-4"
+        default:p-20
+        mobile:p-8"
         >
           <div
             className="
             bg-vscodeBg 
-            w-full max-w-[1480px] 
             border
             border-[#72707D]
             rounded-md
-            aspect-video
             shadow-custom
             overflow-hidden
             grid
-            grid-rows-layout
-            mobile:h-full
-            mobileLarge:h-fit"
+            default:aspect-video
+            default:w-full 
+            default:max-w-[1480px] 
+            mobile:w-full
+            default:grid-rows-default
+            desktop:grid-rows-laptop
+            tablet:grid-rows-tablet
+            mobile:grid-rows-mobile"
           >
             <OpenFilesProvider>
               <Header />
 
-              <div className="grid grid-cols-editor max-h-full h-screen">
+              <div className="
+              grid 
+              max-h-full 
+              h-screen
+              default:grid-cols-default
+              mobile:grid-cols-mobile">
                 <Menu />
                 <Explorer />
 
