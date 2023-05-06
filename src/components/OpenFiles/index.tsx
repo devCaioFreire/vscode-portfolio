@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useOpenFiles } from "@/hooks/useOpenFile";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -16,10 +17,7 @@ export function OpenFilesTabs() {
         const isActive = pathName === openFile;
 
         const file = explorerFiles[openFile];
-
-        if (!file) {
-          return <></>;
-        }
+        if (!file) return null;
 
         return (
           <div

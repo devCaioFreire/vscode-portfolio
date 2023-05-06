@@ -25,13 +25,14 @@ module.exports = {
       default: "2rem 48.5rem 1fr",
       laptop: "2rem 42rem 1fr",
       tablet: "2rem 36rem 1fr",
-      mobile: "2rem 30rem 1fr",
+      mobile: "2rem 36rem 1fr",
     },
     gridTemplateColumns: {
       default: "3.5rem 16rem 1fr",
       laptop: "3.5rem 16rem 1fr",
       tablet: "3.5rem 16rem 1fr",
-      mobile: "0rem 10rem 1fr",
+      mobileLarge: "0rem 10rem 1fr",
+      mobile: "-1rem 0rem 1fr",
     },
     screens: {
       mobile: "320px",

@@ -23,10 +23,11 @@ export const SubMenu = ({
       flex 
       items-center 
       gap-2
-      px-2 
       py-1
       w-full
-      bg-vscodeBg"
+      bg-vscodeBg
+      mobileLarge:px-2 
+      mobile:px-0"
       >
         {isOpen ? (
           <ChevronDown size={14} color="#B3B3B3" />

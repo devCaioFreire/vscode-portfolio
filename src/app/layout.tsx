@@ -66,6 +66,7 @@ export default function RootLayout({
               max-h-full 
               h-screen
               default:grid-cols-default
+              mobileLarge:grid-cols-mobileLarge
               mobile:grid-cols-mobile">
                 <Menu />
                 <Explorer />

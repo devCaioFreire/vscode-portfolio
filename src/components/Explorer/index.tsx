@@ -1,3 +1,4 @@
+"use client";
 import { CurlyBraces, MoreHorizontal } from "lucide-react";
 import { Folder } from "./Folder";
 import { SubMenu } from "./SubMenu";
@@ -30,15 +31,37 @@ export const Explorer = () => {
   return (
     <div
       className="
-    bg-vscodeBgSidebar 
-    border-x-[1px] border-[#000]"
+    bg-vscodeBgSidebar
+    mobileLarge:border-x-[1px] border-[#000]
+    mobileLarge:block
+    mobile:hidden
+    "
     >
-      <div className="flex justify-between px-2 mb-4 mt-1">
-        <p className="text-[0.625rem] text-textGray">EXPLORER</p>
+      <div
+        className="
+        flex
+        justify-between
+        px-2
+        mb-4
+        mt-1"
+      >
+        <p
+          className="
+        text-[0.625rem]
+        text-textGray"
+        >
+          EXPLORER
+        </p>
         <MoreHorizontal color="#B3B3B3" size={18} />
       </div>
 
-      <nav className="mt-4 flex flex-col">
+      <nav
+        className="
+        mt-4
+        mobileLarge:flex
+        flex-col
+        mobile:w-full"
+      >
         <SubMenu title="OPEN EDITORS">
           <OpenFilesSubMenu />
         </SubMenu>

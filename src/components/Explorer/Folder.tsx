@@ -19,9 +19,16 @@ export const Folder = ({
   return (
     <Collapsible.Root open={isOpen} onOpenChange={setIsOpen}>
       <Collapsible.Trigger
-        className="flex items-center gap-2 px-[1.25rem] py-1 w-full 
-      hover:bg-[#322E46] 
-      focus:bg-[#2E2B38]"
+        className="
+        flex 
+        items-center 
+        gap-2 
+        px-[1.25rem] 
+        py-1 
+        w-full 
+        hover:bg-[#322E46] 
+        focus:bg-[#2E2B38]
+        mobileLarge:px-[1.25rem]"
       >
         {isOpen ? (
           <ChevronDown size={14} color="#B3B3B3" />
@@ -31,11 +38,11 @@ export const Folder = ({
 
         <span
           className="
-        flex 
-        items-center
-        gap-2
-        text-xs
-        text-textGray"
+          flex 
+          items-center
+          gap-2
+          text-xs
+          text-textGray"
         >
           <FolderIcon size={14} color="#B3B3B3" />
           {title}
