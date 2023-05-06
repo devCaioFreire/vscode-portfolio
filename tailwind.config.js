@@ -29,6 +29,7 @@ module.exports = {
     },
     gridTemplateColumns: {
       default: "3.5rem 16rem 1fr",
+      projects: "25rem 25rem 3fr",
       laptop: "3.5rem 16rem 1fr",
       tablet: "3.5rem 16rem 1fr",
       mobileLarge: "0rem 10rem 1fr",
