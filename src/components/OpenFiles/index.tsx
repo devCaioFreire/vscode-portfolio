@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { useOpenFiles } from "@/hooks/useOpenFile";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,7 +22,19 @@ export function OpenFilesTabs() {
           <div
             key={index}
             data-active={isActive}
-            className="h-full flex items-center gap-[6px] pl-[10px] hover:bg-[#817c9c26] hover:text-[#908caa] data-[active=true]:bg-[#817c9c14] data-[active=true]:text-white border-b-2 border-vscodeBg data-[active=true]:border-textActive"
+            className="
+            h-full 
+            flex 
+            items-center 
+            gap-[6px] 
+            pl-[10px] 
+            hover:bg-[#817c9c26] 
+            hover:text-[#908caa] 
+            data-[active=true]:bg-[#817c9c14] 
+            data-[active=true]:text-white 
+            border-b-2 
+            border-vscodeBg 
+            data-[active=true]:border-textActive"
           >
             <Link href={openFile} className="flex gap-[6px] items-center ">
               <span className="text-white">{file.icon}</span>

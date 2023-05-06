@@ -13,7 +13,17 @@ export function CodePreview({ code }: CodePreviewProps) {
     <div
       id="shiki-code"
       style={jetBrainsMono.style}
-      className="absolute mt-10 ml-4 inset-0 overflow-auto leading-relaxed scrollbar scrollbar-thumb-[#393552] scrollbar-track-transparent"
+      className="
+      absolute 
+      mt-10 
+      inset-0 
+      overflow-auto 
+      leading-relaxed 
+      scrollbar 
+      scrollbar-thumb-[#393552] 
+      scrollbar-track-transparent
+      mobileLarge:ml-4
+      mobile:ml-1"
       dangerouslySetInnerHTML={{ __html: code }}
     />
   );
