@@ -6,6 +6,7 @@ interface ProjectProps {
   description: string;
   liveDemo?: boolean;
   link?: string;
+  source?: string;
 }
 
 export const ProjectContainer = ({
@@ -14,6 +15,7 @@ export const ProjectContainer = ({
   description,
   liveDemo = false,
   link,
+  source
 }: ProjectProps) => {
   return (
     <div className="pl-4 py-4">
@@ -21,7 +23,7 @@ export const ProjectContainer = ({
         <div className="border-b-2 border-textActive">
           <Image
             src={thumb}
-            className="opacity-[0.7] rounded-t-lg h-[10rem]"
+            className="object-cover opacity-[0.7] rounded-t-lg h-[10rem]"
             width={320}
             height={0}
             alt=""
@@ -33,6 +35,7 @@ export const ProjectContainer = ({
           <div className="flex gap-4">
             {liveDemo && (
               <a
+                target="_blank"
                 className="
               p-2
               px-4
@@ -48,6 +51,7 @@ export const ProjectContainer = ({
               </a>
             )}
             <a
+              target="_blank"
               className="
               p-2
               px-4
@@ -57,7 +61,7 @@ export const ProjectContainer = ({
               rounded-md
               hover:bg-[#322E46]
               hover:text-textWhite"
-              href="https://github.com/devCaioFreire"
+              href={source}
             >
               GitHub
             </a>

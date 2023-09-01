@@ -1,6 +1,4 @@
-import { CodePreview } from "@/components/CodePreview";
 import { ProjectContainer } from "@/components/ProjectContainer";
-import Image from "next/image";
 
 export const metadata = {
   title: "Projects",
@@ -26,11 +24,12 @@ export default function Projects() {
       </h1>
       <div className="mt-16 grid grid-cols-projects ml-[-25rem]">
         <ProjectContainer
-          thumb="https://i.pinimg.com/originals/4a/70/5e/4a705e028bb9f5d50995e68c791fb10a.gif"
-          title="Title"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+          thumb="https://i.pinimg.com/736x/76/82/13/768213e844b14ad4934851731fc4fe2c.jpg"
+          title="Rock | Paper | Scissors"
+          description="Game: rock, paper, scissors"
           liveDemo
-          link={"#"}
+          link={"https://rock-paper-scissor-devfreire.vercel.app/"}
+          source="https://github.com/devCaioFreire/rock-paper-scissor"
         />
         <ProjectContainer
           thumb="https://i.pinimg.com/originals/fc/21/16/fc2116fb21de12a62d4b36c31bbb1e6f.gif"
