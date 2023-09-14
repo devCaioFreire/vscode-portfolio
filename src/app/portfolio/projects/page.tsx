@@ -32,11 +32,12 @@ export default function Projects() {
           source="https://github.com/devCaioFreire/rock-paper-scissor"
         />
         <ProjectContainer
-          thumb="https://i.pinimg.com/originals/fc/21/16/fc2116fb21de12a62d4b36c31bbb1e6f.gif"
-          title="Title"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+          thumb="https://opportunitydesk.org/wp-content/uploads/2023/08/Mastering-Personal-Finances-scaled.jpg"
+          title="Personal Finance Software"
+          description="My app to control my finances."
           liveDemo
-          link={"#"}
+          link={"https://finance-management-nine.vercel.app/"}
+          source="https://github.com/devCaioFreire/finance-manager"
         />
         <ProjectContainer
           thumb="https://i.pinimg.com/originals/a0/d5/81/a0d581666d26dd9c66bf8ed395cba948.gif"

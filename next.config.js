@@ -4,7 +4,10 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["i.pinimg.com"],
+    domains: [
+      "i.pinimg.com",
+      "opportunitydesk.org"
+    ],
   },
 };
 
