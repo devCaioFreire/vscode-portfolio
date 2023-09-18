@@ -34,17 +34,18 @@ export default function Projects() {
         <ProjectContainer
           thumb="https://opportunitydesk.org/wp-content/uploads/2023/08/Mastering-Personal-Finances-scaled.jpg"
           title="Personal Finance Software"
-          description="My app to control my finances."
+          description="My app to control my finances"
           liveDemo
           link={"https://finance-management-nine.vercel.app/"}
           source="https://github.com/devCaioFreire/finance-manager"
         />
         <ProjectContainer
-          thumb="https://i.pinimg.com/originals/a0/d5/81/a0d581666d26dd9c66bf8ed395cba948.gif"
-          title="Title"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+          thumb="https://i.pinimg.com/564x/15/5a/ee/155aee17772e517d46e9f6d50fa0b1ed.jpg"
+          title="Newsletter"
+          description="I developed a newsletter, a scalable way to inform, sell, and acquire customers or users for your business or application"
           liveDemo
-          link={"#"}
+          link={"https://newsletter-azure-six.vercel.app/"}
+          source={"https://github.com/devCaioFreire/newsletter"}
         />
         <ProjectContainer
           thumb="https://i.pinimg.com/originals/c0/a5/21/c0a521e7bee348dd0f60646a49034559.gif"
