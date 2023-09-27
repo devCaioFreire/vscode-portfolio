@@ -44,7 +44,7 @@ export default function Projects() {
           title="Newsletter"
           description="I developed a newsletter, a scalable way to inform, sell, and acquire customers or users for your business or application"
           liveDemo
-          link={"https://newsletter-azure-six.vercel.app/"}
+          link={"newsletter-53nzmnf66-devfreire.vercel.app"}
           source={"https://github.com/devCaioFreire/newsletter"}
         />
         <ProjectContainer
