@@ -49,8 +49,9 @@ export default function Projects() {
         />
         <ProjectContainer
           thumb="https://i.pinimg.com/564x/92/18/4a/92184a471672bcd65d46557674d14206.jpg"
-          title="Title"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+          title="POS | PDV"
+          description="Business Project"
+          source={"https://github.com/devCaioFreire/sat"}
         />
         <ProjectContainer
           thumb="https://i.pinimg.com/564x/92/18/4a/92184a471672bcd65d46557674d14206.jpg"

@@ -1,5 +1,5 @@
-import shiki from "shiki";
 import { CodePreview } from "@/components/CodePreview";
+import shiki from "shiki";
 
 export const revalidate = 1800;
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default async function Contact() {
   const gistURL =
-    "https://gist.githubusercontent.com/devCaioFreire/1414cc1fd0e7e7dd621d48dd7078af33/raw/c6d7dcb97fcb5dc4e509c7db495503fdb76b0d7d/contact.ts";
+    "https://gist.githubusercontent.com/devCaioFreire/1414cc1fd0e7e7dd621d48dd7078af33/raw/a6469aac25d7cef11b215da5d21a0516993ab28c/contact.ts";
   const aboutResponse = await fetch(gistURL);
   const contact = await aboutResponse.text();
 

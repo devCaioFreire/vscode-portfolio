@@ -1,5 +1,5 @@
-import shiki from "shiki";
 import { CodePreview } from "@/components/CodePreview";
+import shiki from "shiki";
 
 export const revalidate = 1800;
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default async function AboutMe() {
   const gistURL =
-    "https://gist.githubusercontent.com/devCaioFreire/c11546a6a4af68c7d98747dfa62f3e1d/raw/eb761516f5092f736955ee41a5862c13349e1ee9/aboutMe.json";
+    "https://gist.githubusercontent.com/devCaioFreire/c11546a6a4af68c7d98747dfa62f3e1d/raw/fe296d0b7f1949adfac8095593870a835e4fabd1/aboutMe.json";
   const aboutResponse = await fetch(gistURL);
   const about = await aboutResponse.text();
 
