@@ -48,7 +48,7 @@ export default function Projects() {
           source={"https://github.com/devCaioFreire/newsletter"}
         />
         <ProjectContainer
-          thumb="https://i.pinimg.com/564x/92/18/4a/92184a471672bcd65d46557674d14206.jpg"
+          thumb="https://scontent.fcgh15-1.fna.fbcdn.net/v/t39.30808-6/300802538_444349007716799_305251310703236519_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1CKHXoWoR9sAX_Nsdff&_nc_ht=scontent.fcgh15-1.fna&oh=00_AfA88liDhVZxKap_eRgQbSH6IGPAi4fFa5eGxyDGpGbzfQ&oe=653EDC2B"
           title="POS | PDV"
           description="Business Project"
           source={"https://github.com/devCaioFreire/sat"}

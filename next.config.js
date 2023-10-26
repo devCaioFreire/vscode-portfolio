@@ -6,7 +6,8 @@ const nextConfig = {
   images: {
     domains: [
       "i.pinimg.com",
-      "opportunitydesk.org"
+      "opportunitydesk.org",
+      "scontent.fcgh15-1.fna.fbcdn.net"
     ],
   },
 };
