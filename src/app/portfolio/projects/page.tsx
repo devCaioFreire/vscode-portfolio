@@ -48,17 +48,17 @@ export default function Projects() {
           source={"https://github.com/devCaioFreire/newsletter"}
         />
         <ProjectContainer
-          thumb="https://i.pinimg.com/originals/c0/a5/21/c0a521e7bee348dd0f60646a49034559.gif"
+          thumb="https://i.pinimg.com/564x/92/18/4a/92184a471672bcd65d46557674d14206.jpg"
           title="Title"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         />
         <ProjectContainer
-          thumb="https://i.pinimg.com/originals/3e/fc/f1/3efcf1e9a5f2c3354714699b321221b4.gif"
+          thumb="https://i.pinimg.com/564x/92/18/4a/92184a471672bcd65d46557674d14206.jpg"
           title="Title"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         />
         <ProjectContainer
-          thumb="https://i.pinimg.com/originals/4e/b5/54/4eb5547214d1c93ca01a195cd5dbdefb.gif"
+          thumb="https://i.pinimg.com/564x/92/18/4a/92184a471672bcd65d46557674d14206.jpg"
           title="Title"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         />
