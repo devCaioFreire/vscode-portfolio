@@ -8,7 +8,7 @@ export const metadata = {
 
 export default async function AboutMe() {
   const gistURL =
-    "https://gist.githubusercontent.com/devCaioFreire/c11546a6a4af68c7d98747dfa62f3e1d/raw/fe296d0b7f1949adfac8095593870a835e4fabd1/aboutMe.json";
+    "https://gist.githubusercontent.com/devCaioFreire/c11546a6a4af68c7d98747dfa62f3e1d/raw/1f9804b16379518475d18e51b5ceb308caa9206c/aboutMe.json";
   const aboutResponse = await fetch(gistURL);
   const about = await aboutResponse.text();
 
